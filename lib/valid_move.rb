@@ -2,8 +2,11 @@
 def valid_move(board, index)
   if (position_taken(board, index) == false && index >= 0 && index <= 8)
     return true
-  else
+  elsif 
+    position_taken(board,index) == true
     return false
+  else
+    return nil
   end
 end
 
